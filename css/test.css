@@ -1,0 +1,40 @@
+:root{
+    --primary-color:'';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- section 1---- */
+
+#section-1{
+    background-image: url(/assets/img/seccion1.jpg);
+    height: 100vh;
+}
+
+/* ----------navbar----------- */
+
+.navbar{
+
+    background-image: url(/assets/img/seccion1.jpg);
+    /* opacity: 0.7; */
+}
+
+.navbar a{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.collapse{
+    display: block;
+    justify-content: center;
+}
+
+.collapse ul {
+    gap: 15px;
+}
