@@ -14,3 +14,30 @@
     background-image: url(/assets/img/seccion1.jpg);
     height: 100vh;
 }
+
+/* ----------navbar----------- */
+
+.navbar{
+
+    background-image: linear-gradient(
+  35deg,
+  hsl(304deg 96% 10%) 0%,
+  hsl(282deg 53% 13%) 7%,
+  hsl(249deg 41% 15%) 16%,
+  hsl(217deg 76% 12%) 26%,
+  hsl(218deg 75% 10%) 37%,
+  hsl(221deg 74% 7%) 48%,
+  hsl(221deg 74% 7%) 59%,
+  hsl(218deg 75% 10%) 69%,
+  hsl(217deg 76% 12%) 79%,
+  hsl(265deg 45% 17%) 87%,
+  hsl(292deg 60% 16%) 94%,
+  hsl(303deg 100% 14%) 100%
+);
+opacity: 0.7;
+
+}
+
+.navbar a{
+    color: #fff;
+}
