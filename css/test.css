@@ -11,13 +11,36 @@
 /* --- section 1---- */
 
 #section-1{
-    background-image: url(/assets/img/seccion1.jpg);
+    /* background-image: url(/assets/img/seccion1.jpg); */
+    background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40)),
+  url(/assets/img/seccion1.jpg);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* test para el header */
+.container__title{
+    background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.30));
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* --- Fin del section 1---- */
+
 
 /* ----------navbar----------- */
 
 .navbar{
+    /* background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40)),
+  url(/assets/img/seccion1.jpg); */
 
     background-image: url(/assets/img/seccion1.jpg);
     /* opacity: 0.7; */
@@ -38,3 +61,8 @@
 .collapse ul {
     gap: 15px;
 }
+
+
+
+
+
