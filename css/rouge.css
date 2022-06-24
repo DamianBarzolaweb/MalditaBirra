@@ -7,6 +7,7 @@
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     
     
     
@@ -24,10 +25,20 @@
     border-radius: 10px;
 }
 
+.container__content{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* -------------navbar------------ */
 .navbar {
+    width: 50%;
+    margin-left: 350px;
     background: inherit;
     /* border: 0.5px solid rgb(202, 160, 21); */
     border-radius: 10px;
+
     
   
 }
@@ -41,17 +52,14 @@
 
 .navbar-nav{
     gap: 50px;
+    margin: auto;
    
 }
 
 
+/* ----------fin del navbar---------- */
 
 
-.container__header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
@@ -60,6 +68,7 @@
 @media only screen and (max-width: 480px) {
     .navbar{
         width: 100%;
+        margin: 0;
         
     }
 
@@ -79,9 +88,11 @@
        
     }
 
+   
     .container__title{
-        width: 80%;
+        width: 90%;
         margin: auto;
+        margin-top: -50px;
     }
 
     
