@@ -1,69 +1,196 @@
-:root {
-    --primary-color: '';
-}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html{
-    height: 100%;
-}
-
-/* --- section 1---- */
-
-#section-1 {
-    background: linear-gradient(rgba(236, 222, 14, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/assets/img/seccion1.jpg);
+.container__header {
+    background: url(/assets/img/seccion1.jpg);
     height: 100vh;
-    display: flex;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+
 }
 
-/* test para el header */
-.container__title {
-    background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.30));
-    width: 500px;
-    height: auto;
+
+.collapse {
     display: flex;
+    justify-content: end;
+}
+
+.fa-brands{
+    font-size: 40px;
+}
+
+.fa-solid{
+    font-size: 50px;
+    margin-left: 10px;
+
+}
+
+.social-media{
+    gap: 20px;
     justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.container__title {
+    background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.8));
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: end;
     flex-direction: column;
     text-align: center;
     color: #fff;
     border-radius: 10px;
 }
 
-/* --- Fin del section 1---- */
+.container__content {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-/* ----------navbar----------- */
-
+/* -------------navbar------------ */
 .navbar {
-    /* background: url(/assets/img/seccion1.jpg); */
-    background-image: inherit;
-  
+    display: flex;
+    height: 70px;
+    /* justify-content: space-around; */
+
+}
+
+.subtitle p {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    animation: malditabirra 5s;
+
 }
 
 .navbar a {
-    color: rgb(0, 0, 0);
+    color: black;
+    /* font-weight: bold; */
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 15px;
 
 }
 
-.collapse {
-    display: block;
-    justify-content: center;
+.navbar a:hover{
+    background-color: rebeccapurple;
+}
+
+
+
+h1 {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 10px;
 
 }
 
-.collapse ul {
-    gap: 15px;
+.navbar-nav {
+    gap: 50px;
+
+
+}
+
+
+/* ----------fin del navbar---------- */
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        width: 100%;
+        margin: 0;
+        background: inherit;
+
+
+        border-radius: 10px 10px 200px 10px;
+        -moz-border-radius: 10px 10px 200px 10px;
+        -webkit-border-radius: 10px 10px 200px 10px;
+        border: 0px solid #000000;
+
+    }
+
+    .fa-solid{
+        visibility: hidden;
+    }
+
+
+    .collapse {
+        background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10));
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .navbar-nav {
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+
+    .container__title {
+        width: 90%;
+        margin: auto;
+        margin-top: -50px;
+    }
+
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        background: inherit;
+
+    }
+
+    .collapse {
+        /* background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10)); */
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+        background: inherit;
+
+    }
+
+    .collapse {
+        /* background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10)); */
+        border-radius: 10px;
+        display: flex;
+        justify-content: start;
+
+    }
+}
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .navbar {
+        width: 100%;
+
+    }
 }
