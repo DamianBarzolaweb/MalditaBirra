@@ -1,43 +1,120 @@
-:root{
-    --primary-color:'';
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* --- section 1---- */
-
-#section-1{
-    background-image: url(/assets/img/seccion1.jpg);
+.container__header{
+    background: linear-gradient(rgba(236, 222, 14, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/img/seccion1.jpg);
     height: 100vh;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+    
 }
 
-/* ----------navbar----------- */
+.container__title {
+    background: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.30));
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
 
-.navbar{
+.container__content{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* -------------navbar------------ */
+.navbar {
+    width: 50%;
+    margin-left: 350px;
+    background: inherit;
+    /* border: 0.5px solid rgb(202, 160, 21); */
+    border-radius: 10px;
 
-    background-image: linear-gradient(
-  35deg,
-  hsl(304deg 96% 10%) 0%,
-  hsl(282deg 53% 13%) 7%,
-  hsl(249deg 41% 15%) 16%,
-  hsl(217deg 76% 12%) 26%,
-  hsl(218deg 75% 10%) 37%,
-  hsl(221deg 74% 7%) 48%,
-  hsl(221deg 74% 7%) 59%,
-  hsl(218deg 75% 10%) 69%,
-  hsl(217deg 76% 12%) 79%,
-  hsl(265deg 45% 17%) 87%,
-  hsl(292deg 60% 16%) 94%,
-  hsl(303deg 100% 14%) 100%
-);
-opacity: 0.7;
-
+    
+  
 }
 
 .navbar a{
-    color: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.navbar-nav{
+    gap: 50px;
+    margin: auto;
+   
+}
+
+
+/* ----------fin del navbar---------- */
+
+
+
+
+
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    .navbar{
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .collapse{
+        background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10));
+        border-radius: 10px;
+        
+    }
+
+    .navbar-nav{
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+       
+    }
+
+   
+    .container__title{
+        width: 90%;
+        margin: auto;
+        margin-top: -50px;
+    }
+
+    
+
+  
+}
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar{
+        width: 100%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .navbar{
+        width: 100%;
+    }
+}
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .navbar{
+        width: 100%;
+    }
 }
