@@ -2,7 +2,7 @@
 
 
 .container__header {
-    background: url(/assets/img/seccion1.jpg);
+    background: url(/assets/img/bar-gd2494dd20_1920.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,17 +21,17 @@
     justify-content: end;
 }
 
-.fa-brands{
+.fa-brands {
     font-size: 40px;
 }
 
-.fa-solid{
+.fa-solid {
     font-size: 50px;
     margin-left: 10px;
 
 }
 
-.social-media{
+.social-media {
     gap: 20px;
     justify-content: center;
     margin-bottom: 20px;
@@ -73,19 +73,23 @@
 }
 
 .navbar a {
-    color: black;
+    color: #ffc107;
     /* font-weight: bold; */
     font-family: 'Righteous', cursive;
     font-size: 40px;
     text-transform: uppercase;
 
+
 }
 
-.navbar a:hover{
-    background-color: rebeccapurple;
+.navbar a:hover {
+    background-color: #ffc107;
+    color: #343a40;
+    width: auto;
+    transition: all ease-in-out 0.4s;
+    padding: 90px;
+    /* font-size: 20px; */
 }
-
-
 
 h1 {
     font-family: 'Righteous', cursive;
@@ -117,7 +121,13 @@ h1 {
 
     }
 
-    .fa-solid{
+    .navbar a:hover {
+        /* background-color: #ffc107; */
+        color: black;
+        width: auto;
+    }
+
+    .fa-solid {
         visibility: hidden;
     }
 
@@ -160,6 +170,13 @@ h1 {
 
     }
 
+    .navbar a:hover {
+        /* background-color: red; */
+        color: black;
+        width: auto;
+    }
+
+
     .collapse {
         /* background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10)); */
         border-radius: 10px;
@@ -178,6 +195,13 @@ h1 {
 
     }
 
+    .navbar a:hover {
+        /* background-color: #ffc107; */
+        color: black;
+        width: auto;
+    }
+
+
     .collapse {
         /* background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10)); */
         border-radius: 10px;
@@ -193,4 +217,11 @@ h1 {
         width: 100%;
 
     }
+
+    .navbar a:hover {
+        /* background-color: #ffc107; */
+        color: black;
+        width: auto;
+    }
+
 }
